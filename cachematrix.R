@@ -22,7 +22,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## This function returns the inverse of a list 'x' created by makeCacheMatrix 
-## and saves the inverse for future re-use in x.
+## and saves the inverse for future re-use in x. If a cached inverse exists,
+## the if function uses the cached version instead.
 
 cacheSolve <- function(x, ...) {
   inver <- x$getinver()
